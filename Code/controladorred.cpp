@@ -14,7 +14,7 @@ int ControladorRed::buscarIndice(char nombre) const {
 }
 void ControladorRed::agregarRouter(char nombre) {
     if (buscarIndice(nombre) != -1) {
-        cout << "ese router " << nombre << " ya existe en la red" << endl;
+        cout << "ese router " << nombre << " es imposible agregar, acuerdese solo char" << endl;
         return;
     }
     int n = routers.size() + 1;
